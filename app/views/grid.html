@@ -1,0 +1,24 @@
+<div>
+    <table class="garage-table">
+        <thead>
+            <th>Name</th>
+            <th>Free Space Long</th>
+            <th>Free Space Short</th>
+            <th>Coords</th>
+            <th>Available</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="garage in garages" ng-click="showDetails(this)">
+                <td ng-bind="garage.name"></td>
+                <td ng-bind="garage.freeSpaceLong"></td>
+                <td ng-bind="garage.freeSpaceLong"></td>
+                <td ng-bind="garage.coords"></td>
+                <td>
+                    <div ng-if="garage.freeSpace" class="green-light"></div>
+                    <div ng-if="!garage.freeSpace"class="red-light"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div ng-if="details" ng-include="detailsUrl"></div>
+</div>

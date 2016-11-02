@@ -1,0 +1,112 @@
+// bower:scss
+// endbower
+$greylight: #2f323a;
+html {
+  height: 100%;
+}
+body {
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  width: 70%;
+  margin-top: 25px;
+  margin: auto;
+}
+
+/* Custom page header */
+.header {
+  margin-bottom: 0px;
+  color: #fff;
+  .navbar-default {
+    background-color: $greylight;
+    margin-bottom: 0px;
+    height: 61px;
+    border: none;
+    border-radius: 0;
+    .container-nav {
+      width: 100%;
+      .navbar-header {
+        width: 50%;
+        float: left;    
+      }
+      .navbar-collapse {
+        width: 50%;
+        float: right;    
+      }
+      .navbar-nav {
+        float: right;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 500;
+        span {
+          margin-top: 15px;
+          display: inline-block;
+          a:hover {
+            text-decoration: none;
+          }
+        }
+        a {
+          color: #fff;
+          height: 61px;
+          padding: 19px;
+        }
+      }
+      .navbar-brand {
+        width: 264px;
+        height: 61px;
+        background-color: #1e2025;
+        img {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+.garage-table {
+  border-radius: 5px;
+  border-collapse: collapse;
+  border: 1px solid $greylight;
+      width: 90%;
+    margin: auto;
+    margin-top: 30px;
+  tr {
+    cursor: pointer;
+    td {
+      border: 1px solid $greylight;
+      min-width: 10px;
+      .red-light {
+        border-radius: 60px;
+        background-color: red;
+        width: 20px;
+    height: 19px;
+    margin: auto;
+      }
+      .green-light {
+        border-radius: 60px;
+        background-color: green;
+        width: 20px;
+    height: 19px;
+    margin: auto;
+      }
+    }
+  }
+}

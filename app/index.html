@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/grid.js"></script>
+        <script src="scripts/controllers/garageDetail.js"></script>
+        <script src="scripts/services/dataservice.js"></script>
+        <!-- endbuild -->
+    <script src="scripts/services/dataservice.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body ng-app="angularTest">
+    <div class="header">
+      <div class="navbar-default" role="navigation">
+        <div class="container-nav">
+          <div class="navbar-header">
+            <a class="navbar-brand"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container"> 
+      <div ng-view=""></div>
+    </div>
+</body>
+</html>
